@@ -1,20 +1,20 @@
 $(document).ready(function () {
- //owl carousel
+ /************ owl carousel *************/
  $(".owl-carousel").owlCarousel({
   loop: true,
-  margin: 0,
   nav: true,
   dots: false,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: false,
   responsive: {
    0: {
     items: 1,
    },
-   600: {
-    items: 3,
-   },
-   1000: {
-    items: 1,
-   },
   },
+  rtl: true,
  });
+
+ /************ jQuery validation *************/
+ $("#contactForm").validate();
 });
